@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>You can use an array to display the anme of the weekday:</p>
+<p id="demo"></p>
+
+<script>
+	var d = new Date();
+	var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
+	document.getElementById("demo").innerHTML = days[d.getDay()];
+</script>
+</body>
+</html>

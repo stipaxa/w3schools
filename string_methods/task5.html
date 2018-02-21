@@ -1,0 +1,24 @@
+<!DOCUMENT html>
+<html>
+<body>
+
+<h2> JS String methods</h2>
+
+<p>Replace all occurrences of "Microsoft" with "W3Schools" in 
+the paragraph below:</p>
+
+<button onclick="myFunction()">Try it</button>
+<p id="demo">Please visit Microsoft and Microsoft!</p>
+
+<script>
+function myFunction() {
+	var str = document.getElementById("demo").innerHTML;
+	// To replace all matches, use a regular expression 
+	// with a /g flag (global match)
+	var txt = str.replace(/Microsoft/g, "W3Schools");
+	document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+	var str = "Hello";
+	// If the separator is "", the returned array will 
+	// be an array of single characters.
+	var arr = str.split("");
+	var txt = "";
+	var i;
+	for(i = 0; i < arr.length; i++) {
+		text += arr[i] + "<br>"
+	}
+	document.getElementById("demo").innerHTML = text;
+</script>
+
+<script>

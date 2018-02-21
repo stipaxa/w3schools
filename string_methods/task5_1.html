@@ -1,0 +1,24 @@
+<!DOCUMENT html>
+<html>
+<body>
+
+<h2> JS String methods</h2>
+
+<p>Replace all occurrences of "Microsoft" with "W3Schools" in 
+the paragraph below:</p>
+
+<button onclick="myFunction()">Try it</button>
+<p id="demo">Please visit Microsoft and Microsoft!</p>
+
+<script>
+function myFunction() {
+	var str = document.getElementById("demo").innerHTML;
+	// To replace case insensitive, 
+	// use a regular expression with an /i flag (insensitive)
+	var txt = str.replace(/MICROSOFT/i, "W3Schools");
+	document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+</body>
+</html>
